@@ -1,0 +1,65 @@
+/////CATEGORY/////
+
+GET categories: http: //localhost:3001/api/categories
+
+POST categories: http: //localhost:3001/api/categories
+{
+    "category_name": "Sports"
+}
+
+PUT http: //localhost:3001/api/categories/6
+{
+    "category_name": "Snacks"
+}
+
+GET category: http: //localhost:3001/api/categories/1
+
+DELETE category: http: //localhost:3001/api/categories/6
+/////PRODUCTS/////
+GET products: http: //localhost:3001/api/products
+
+POST products: //localhost:3001/api/products
+{
+    "product_name": "Basketball",
+    "price": 200.00,
+    "stock": 3,
+    "tagIds": [
+        1,
+        2,
+        3,
+        4
+    ]
+}
+
+PUT products: //localhost:3001/api/products
+{
+    "product_name": "Cookies",
+    "price": 200.00,
+    "stock": 3,
+    "tagIds": [
+        1,
+        2,
+        3,
+        4
+    ]
+}
+
+DELETE products:http: //localhost:3001/api/products/6
+/////TAGS/////
+
+GET tags: http: //localhost:3001/api/tags
+
+POST tags: http: //localhost:3001/api/tags
+{
+    "tag_name": "Shiny"
+}
+
+PUT tags: http: http: //localhost:3001/api/tags/1
+{
+    "tag_name": "Salty"
+}
+
+DELETE tags: http: http: //localhost:3001/api/tags/1
+{
+    "tag_name": "Salty"
+}
